@@ -10,7 +10,11 @@
 
 @implementation Person
 
-NSString *_name; //underlying instance variable
+NSString *_firstName; //underlying instance variable
+NSString *_lastName;
+NSNumber *_age;
+
+
 
 ////this is a getter
 //-(NSString *)name{
@@ -26,11 +30,15 @@ NSString *_name; //underlying instance variable
     
     //access name first
     //               self is instance of Person
-    NSString *name = [self name];
+    NSString *firstName = [self firstName];
+    NSString *lastName = [self lastName];
+    NSNumber *age = [self age];
+    
     
 //    NSString *adam = @"Adam";//this is how you define a string literal with @
 //    NSLog(@"%@ is walking...Hello %@,", name, adam);//%@ is like interpolation but have to define it like top
-    NSLog(@"%@ is walking...", name);
+    NSLog(@"%@ %@ is still young at %@", firstName, lastName, age);
+  
 }
 
 +(void)sayHello{

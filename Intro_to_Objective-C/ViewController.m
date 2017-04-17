@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"//importing the person class
 #import "ViewControllerDataSource.h"
+#import "Employee.h"
 
 //no * because it is not a reference, it is a value type
 static int gMoveNumber = 10;//static so that it will show on here only globally
@@ -24,13 +25,21 @@ static int gMoveNumber = 10;//static so that it will show on here only globally
     
     [self requiredNumberForEachItem:100];//this is using the method made
     
-    Person *adam = [[Person alloc] init];//returns a memory place and is initialized
+    Person *jay = [[Person alloc] init];//returns a memory place and is initialized
+    Employee *jayB = [[Employee alloc]init];
     
-    [adam setName:@"Adam"];
+    [jay setFirstName:@"Jay"];
+    [jay setLastName:@"Balderas"];
+    [jay setAge:@27];
+    
+    [jayB setEmployeeNumber:@1234];
+    [jayB setYearsEmployed:@2];
+    [jayB setManagerName:@"Joe"];
+    
     //                          returning instance to "personName"
 //    NSString *personName = [adam name];//this is the getter that is returning a value 
     
-    [adam walk];
+    [jay walk];
     [Person sayHello];
     
     NSLog(@"%i", gMoveNumber);

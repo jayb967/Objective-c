@@ -10,7 +10,11 @@
 
 @interface Person : NSObject
 
-@property(strong, nonatomic) NSString *name;//can use this instead of using the setter and getter here and in Person.m
+@property(strong, nonatomic) NSString *firstName;//can use this instead of using the setter and getter here and in Person.m
+@property(strong, nonatomic) NSString *lastName;
+
+@property(weak, nonatomic) NSNumber *age;
+
 
 
 
