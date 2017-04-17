@@ -9,9 +9,10 @@
 #import "NSString+Array.h"
 
 @implementation NSString (Array)
--(NSString *)array{
-    
-     NSString *array=[NSString new];
+-(NSArray *)stringToArray{
+    //TODO: Convert self to an array and return it
+    //Example: @"Hello World" -> [@"Hello", @"World"]
+    NSArray *array = [self componentsSeparatedByString:@" "];
     return array;
 }
 @end
@@ -19,14 +20,17 @@
 @implementation NSString (ReversedString)
 
 //I dont know if this works.
--(NSMutableString *)reversedString{
-    NSMutableString *reversedString = [NSMutableString string];
-    NSInteger charIndex = [reversedString length];
-    while (charIndex > 0) {
-        charIndex--;
-        NSRange subStrRange = NSMakeRange(charIndex, 1);
-        [reversedString appendString:[reversedString substringWithRange:subStrRange]];
++ (NSString *)reversedString:(NSString *)str{
+    
+    NSMutableString *reversedString = [[NSMutableString alloc] init];
+    
+    NSArray *array = [str stringToArray];
+    int count = (int)array.count - 1;
+    while (count >= 0) {
+        [reversedString appendString:array[count]];
+        count --;
     }
+    
     return reversedString;
 }
 
