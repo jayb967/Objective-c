@@ -13,6 +13,8 @@
 		280D7E641EA5250E008CC116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E621EA5250E008CC116 /* Main.storyboard */; };
 		280D7E661EA5250F008CC116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E651EA5250F008CC116 /* Assets.xcassets */; };
 		280D7E691EA5250F008CC116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E671EA5250F008CC116 /* LaunchScreen.storyboard */; };
+		280D7E721EA52F2C008CC116 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E711EA52F2C008CC116 /* Person.m */; };
+		280D7E751EA5454E008CC116 /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E741EA5454E008CC116 /* ViewController+Identifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		280D7E651EA5250F008CC116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280D7E681EA5250F008CC116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280D7E6A1EA5250F008CC116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280D7E701EA52F2C008CC116 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		280D7E711EA52F2C008CC116 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		280D7E731EA5454E008CC116 /* ViewController+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Identifier.h"; sourceTree = "<group>"; };
+		280D7E741EA5454E008CC116 /* ViewController+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Identifier.m"; sourceTree = "<group>"; };
+		280D7E761EA54843008CC116 /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +67,13 @@
 			children = (
 				280D7E5C1EA5250E008CC116 /* AppDelegate.h */,
 				280D7E5D1EA5250E008CC116 /* AppDelegate.m */,
+				280D7E761EA54843008CC116 /* ViewControllerDataSource.h */,
+				280D7E701EA52F2C008CC116 /* Person.h */,
+				280D7E711EA52F2C008CC116 /* Person.m */,
 				280D7E5F1EA5250E008CC116 /* ViewController.h */,
 				280D7E601EA5250E008CC116 /* ViewController.m */,
+				280D7E731EA5454E008CC116 /* ViewController+Identifier.h */,
+				280D7E741EA5454E008CC116 /* ViewController+Identifier.m */,
 				280D7E621EA5250E008CC116 /* Main.storyboard */,
 				280D7E651EA5250F008CC116 /* Assets.xcassets */,
 				280D7E671EA5250F008CC116 /* LaunchScreen.storyboard */,
@@ -153,6 +165,8 @@
 			files = (
 				280D7E611EA5250E008CC116 /* ViewController.m in Sources */,
 				280D7E5E1EA5250E008CC116 /* AppDelegate.m in Sources */,
+				280D7E751EA5454E008CC116 /* ViewController+Identifier.m in Sources */,
+				280D7E721EA52F2C008CC116 /* Person.m in Sources */,
 				280D7E5B1EA5250E008CC116 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

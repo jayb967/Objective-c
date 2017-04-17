@@ -7,17 +7,29 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController+Identifier.h"//have to explicitly import the category
+
+//extern int gMoveNumber;
 
 @interface AppDelegate ()
+//everything in here is private since it's .m
 
 @end
 
 @implementation AppDelegate
 
-
+//(-) means intance and return type of BOOL                                    argument   *means reference
+        //                      actual argument name
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    NSLog(@"%i", gMoveNumber);
+    
+    ViewController *myViewController = [[ViewController alloc]init];
+    
+    NSString *identifier = [myViewController identifier];
+    
     return YES;
+    //YES means true
 }
 
 

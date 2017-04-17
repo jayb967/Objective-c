@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
+
+                        //class         the protocol it conforms to(<>)
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+//          modifiers	
 @property (strong, nonatomic) UIWindow *window;
 
 
