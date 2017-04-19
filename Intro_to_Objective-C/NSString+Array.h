@@ -9,11 +9,16 @@
 #import "ViewController.h"
 
 @interface NSString (Array)
--(NSString *)array;
-
+-(NSArray *)stringToArray;
+//NSArray *array = [@"Hello world" stringToArray]
+//Example: @"Hello World" -> [@"Hello", @"World"]
 @end
 
 @interface NSString (ReversedString)
--(NSMutableString *)reversedString;
++ (NSString *)reversedString:(NSString *)str;
+// [NSString reveredString:@"Hello World"]
+//Example: @"Hello World" -> @"World Hello"
+
+
 
 @end
