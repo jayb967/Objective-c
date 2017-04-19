@@ -11,6 +11,7 @@
 #import "ViewControllerDataSource.h"
 #import "EmployeeDatabase.h"
 
+
 //no * because it is not a reference, it is a value type
 static int gMoveNumber = 10;//static so that it will show on here only globally
 
@@ -109,7 +110,11 @@ static int gMoveNumber = 10;//static so that it will show on here only globally
     
     [jay walk];
     [Person sayHello];
+    NSString *str = @"Hello world";
     
+    NSLog(@"string to array: %@",str.stringToArray);
+    NSLog(@"revered string: %@", [NSString reversedString:str]);
+
     NSLog(@"%i", gMoveNumber);
     
 }
