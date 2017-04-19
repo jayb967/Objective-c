@@ -26,24 +26,24 @@ static int gMoveNumber = 10;//static so that it will show on here only globally
     //this is how you would call a singleton
 //        [[EmployeeDatabase shared] allEmployees];
     
-    NSLog(@"All employees:%@", [[EmployeeDatabase shared]allEmployees]);
+//    NSLog(@"All employees:%@", [[EmployeeDatabase shared]allEmployees]);
 //        NSLog(@"All employees:%@", [[[[EmployeeDatabase shared]allEmployees]firstObject]managerName]);
     
-    Employee *newEmp = [[Employee alloc]initWithFirstName:@"Jay3" lastName:@"Badleras" age:@28 yearsEmployed:@12 manager:@"idk" andEmail:@"idkwhat imdoing23@gmail.com"];
-    
-    [[EmployeeDatabase shared] add:newEmp];
-    
-    
-        Employee *original = [[Employee alloc] initWithFirstName:@"Jay" lastName:@"Balderas" age:@27 yearsEmployed:@2 manager:@"Myself" andEmail:@"iHaveNoIdeaWhatImDoing@codefellows.com"];
-    
-    Employee *employee2 = [[Employee alloc] initWithFirstName:@"Jay2" lastName:@"Balderas" age:@27 yearsEmployed:@2 manager:@"Adam" andEmail:@"iHaveNoIdeaWhatImDoingVersion2@codefellows.com"];
+//    Employee *newEmp = [[Employee alloc]initWithFirstName:@"Jay3" lastName:@"Badleras" age:@28 yearsEmployed:@12 manager:@"idk" andEmail:@"idkwhat imdoing23@gmail.com"];
+//    
+//    [[EmployeeDatabase shared] add:newEmp];
+//    
+//    
+//        Employee *original = [[Employee alloc] initWithFirstName:@"Jay" lastName:@"Balderas" age:@27 yearsEmployed:@2 manager:@"Myself" andEmail:@"iHaveNoIdeaWhatImDoing@codefellows.com"];
+//    
+//    Employee *employee2 = [[Employee alloc] initWithFirstName:@"Jay2" lastName:@"Balderas" age:@27 yearsEmployed:@2 manager:@"Adam" andEmail:@"iHaveNoIdeaWhatImDoingVersion2@codefellows.com"];
 
 //        Employee *newDeveloper = [original copy];
 //        newDeveloper.firstName = @"Mike";
 //        NSLog(original.firstName);
     
-        [[EmployeeDatabase shared] add:original];
-        [[EmployeeDatabase shared] add:employee2];
+//        [[EmployeeDatabase shared] add:original];
+//        [[EmployeeDatabase shared] add:employee2];
 //        [[EmployeeDatabase shared] add:employee3];
     
     [self requiredNumberForEachItem:100];//this is using the method made
