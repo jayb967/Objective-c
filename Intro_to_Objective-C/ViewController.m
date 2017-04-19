@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "Person.h"//importing the person class
 #import "ViewControllerDataSource.h"
-#import "Employee.h"
 #import "EmployeeDatabase.h"
 
 //no * because it is not a reference, it is a value type
@@ -26,6 +25,13 @@ static int gMoveNumber = 10;//static so that it will show on here only globally
     
     //this is how you would call a singleton
 //        [[EmployeeDatabase shared] allEmployees];
+    
+    NSLog(@"All employees:%@", [[EmployeeDatabase shared]allEmployees]);
+//        NSLog(@"All employees:%@", [[[[EmployeeDatabase shared]allEmployees]firstObject]managerName]);
+    
+    Employee *newEmp = [[Employee alloc]initWithFirstName:@"Jay3" lastName:@"Badleras" age:@28 yearsEmployed:@12 manager:@"idk" andEmail:@"idkwhat imdoing23@gmail.com"];
+    
+    [[EmployeeDatabase shared] add:newEmp];
     
     
         Employee *original = [[Employee alloc] initWithFirstName:@"Jay" lastName:@"Balderas" age:@27 yearsEmployed:@2 manager:@"Myself" andEmail:@"iHaveNoIdeaWhatImDoing@codefellows.com"];
@@ -48,7 +54,7 @@ static int gMoveNumber = 10;//static so that it will show on here only globally
     
     switch ([num1 compare:num2]) {
         case NSOrderedSame:
-            NSLog(@"NUmbers are equal");
+            NSLog(@"Numbers are equal");
             break;
         case NSOrderedAscending:
             NSLog(@"Less than");
