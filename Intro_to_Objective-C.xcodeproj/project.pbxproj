@@ -19,6 +19,7 @@
 		280D7E801EA57ACB008CC116 /* NSString+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E7F1EA57ACB008CC116 /* NSString+Array.m */; };
 		280D7E831EA6877C008CC116 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E821EA6877C008CC116 /* EmployeeDatabase.m */; };
 		280D7E861EA6D903008CC116 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E851EA6D903008CC116 /* TableViewController.m */; };
+		289FC1231EA8134900264554 /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289FC1221EA8134900264554 /* AddEmployeeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		280D7E821EA6877C008CC116 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
 		280D7E841EA6D903008CC116 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		280D7E851EA6D903008CC116 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		289FC1211EA8134900264554 /* AddEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEmployeeViewController.h; sourceTree = "<group>"; };
+		289FC1221EA8134900264554 /* AddEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEmployeeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		280D7E7B1EA57666008CC116 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				289FC1211EA8134900264554 /* AddEmployeeViewController.h */,
+				289FC1221EA8134900264554 /* AddEmployeeViewController.m */,
 				280D7E841EA6D903008CC116 /* TableViewController.h */,
 				280D7E851EA6D903008CC116 /* TableViewController.m */,
 				280D7E5F1EA5250E008CC116 /* ViewController.h */,
@@ -211,6 +216,7 @@
 			files = (
 				280D7E611EA5250E008CC116 /* ViewController.m in Sources */,
 				280D7E5E1EA5250E008CC116 /* AppDelegate.m in Sources */,
+				289FC1231EA8134900264554 /* AddEmployeeViewController.m in Sources */,
 				280D7E831EA6877C008CC116 /* EmployeeDatabase.m in Sources */,
 				280D7E801EA57ACB008CC116 /* NSString+Array.m in Sources */,
 				280D7E861EA6D903008CC116 /* TableViewController.m in Sources */,

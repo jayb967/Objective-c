@@ -29,10 +29,28 @@
 }
 
 -(instancetype)init{
+    self = [super init];
+    
     if(self) {
-        _employees = [[NSMutableArray alloc]init];
+        _employees = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfURL:self.archiveURL]];
+        if (!_employees) {//check to see if it is not there first
+            //assigning to underlying instance variable aka "_"
+            _employees = [[NSMutableArray alloc]init];
+        }
     }
     return self;
+}
+
+//below method will check if anything cheanges it will save to disk
+-(void)save{
+    //will allow to save
+    BOOL success = [NSKeyedArchiver archiveRootObject:self.employees toFile:self.archiveURL.path];
+    
+    if (success) {
+        NSLog(@"saved employees");
+    } else {
+        NSLog(@"save failed");
+    }
 }
 
 
@@ -46,6 +64,7 @@
 
 -(void)add: (Employee *)employee{
     [self.employees addObject:employee];
+    [self save];//this calls the save method on top to save the updated array
 }
 
 -(Employee *)employeeAtIndex:(int)index{
@@ -53,12 +72,15 @@
 }
 -(void)remove:(Employee *)employee{
     [self.employees removeObject:employee];
+    [self save];//this calls the save method on top to save the updated array
 }
 -(void)removeEmployeeAtIndex:(int)index{
     [self.employees removeObjectAtIndex:index];
+    [self save];//this calls the save method on top to save the updated array
 }
 -(void)removeAllEmployees{
     [self.employees removeAllObjects];
+    [self save];//this calls the save method on top to save the updated array
 }
 
 
