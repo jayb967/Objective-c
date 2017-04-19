@@ -17,6 +17,8 @@
 		280D7E751EA5454E008CC116 /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E741EA5454E008CC116 /* ViewController+Identifier.m */; };
 		280D7E791EA56A26008CC116 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E781EA56A26008CC116 /* Employee.m */; };
 		280D7E801EA57ACB008CC116 /* NSString+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E7F1EA57ACB008CC116 /* NSString+Array.m */; };
+		280D7E831EA6877C008CC116 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E821EA6877C008CC116 /* EmployeeDatabase.m */; };
+		280D7E861EA6D903008CC116 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E851EA6D903008CC116 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		280D7E7D1EA57708008CC116 /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
 		280D7E7E1EA57ACB008CC116 /* NSString+Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Array.h"; sourceTree = "<group>"; };
 		280D7E7F1EA57ACB008CC116 /* NSString+Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Array.m"; sourceTree = "<group>"; };
+		280D7E811EA6877C008CC116 /* EmployeeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeDatabase.h; sourceTree = "<group>"; };
+		280D7E821EA6877C008CC116 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
+		280D7E841EA6D903008CC116 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		280D7E851EA6D903008CC116 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 		280D7E7A1EA57657008CC116 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				280D7E811EA6877C008CC116 /* EmployeeDatabase.h */,
+				280D7E821EA6877C008CC116 /* EmployeeDatabase.m */,
 				280D7E761EA54843008CC116 /* ViewControllerDataSource.h */,
 				280D7E7D1EA57708008CC116 /* PersonQueue.h */,
 				280D7E5C1EA5250E008CC116 /* AppDelegate.h */,
@@ -107,6 +115,8 @@
 		280D7E7B1EA57666008CC116 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				280D7E841EA6D903008CC116 /* TableViewController.h */,
+				280D7E851EA6D903008CC116 /* TableViewController.m */,
 				280D7E5F1EA5250E008CC116 /* ViewController.h */,
 				280D7E601EA5250E008CC116 /* ViewController.m */,
 				280D7E731EA5454E008CC116 /* ViewController+Identifier.h */,
@@ -201,7 +211,9 @@
 			files = (
 				280D7E611EA5250E008CC116 /* ViewController.m in Sources */,
 				280D7E5E1EA5250E008CC116 /* AppDelegate.m in Sources */,
+				280D7E831EA6877C008CC116 /* EmployeeDatabase.m in Sources */,
 				280D7E801EA57ACB008CC116 /* NSString+Array.m in Sources */,
+				280D7E861EA6D903008CC116 /* TableViewController.m in Sources */,
 				280D7E791EA56A26008CC116 /* Employee.m in Sources */,
 				280D7E751EA5454E008CC116 /* ViewController+Identifier.m in Sources */,
 				280D7E721EA52F2C008CC116 /* Person.m in Sources */,
@@ -366,6 +378,7 @@
 				280D7E6F1EA5250F008CC116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,11 +9,43 @@
 #import "Employee.h"
 
 
-@implementation Employee
+@implementation Employee 
 
-NSNumber *_employeeNumber;
-NSNumber *_yearsEmployed;
-NSString *_managerName;
+-(instancetype)initWithFirstName:(NSString *)firstName
+                        lastName:(NSString *)lastName
+                             age:(NSNumber *)age
+                   yearsEmployed:(NSNumber *)yearsEmployed
+                      manager:(NSString *)managerName
+                           andEmail:(NSString *)email;{
+    
+    self = [super initWithFirstName:firstName lastName:lastName andAge:age];
+    
+    if (self) {
+        _yearsEmployed = yearsEmployed;
+        _managerName = managerName;
+        _email = email;
+        _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
+        
+    }
+    return self;
+    
+}
+
+-(id)copyWithZone:(NSZone *)zone{
+    Employee *employee = [super copyWithZone:zone];
+    
+    employee.employeeNumber = self.employeeNumber;
+    employee.managerName = self.managerName;
+    employee.yearsEmployed = self.yearsEmployed;
+    employee.email = self.email;
+    
+    return employee;
+    
+}
+
+//NSNumber *_employeeNumber;
+//NSNumber *_yearsEmployed;
+//NSString *_managerName;
 
 
 //dont need this here because I already declared it in the viewController.m///////////////////

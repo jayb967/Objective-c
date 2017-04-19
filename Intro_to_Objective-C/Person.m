@@ -10,9 +10,19 @@
 
 @implementation Person
 
-NSString *_firstName; //underlying instance variable
-NSString *_lastName;
-NSNumber *_age;
+//NSString *_firstName; //underlying instance variable
+//NSString *_lastName;
+//NSNumber *_age;
+
+-(instancetype)initWithFirstName:(NSString *)firstName lastName: (NSString *)lastName andAge:(NSNumber *)age{
+    self = [super init];
+    if (self) {
+        _firstName = firstName;
+        _lastName = lastName;
+        _age = age;
+    }
+    return self;
+}
 
 
 
@@ -44,5 +54,15 @@ NSNumber *_age;
 +(void)sayHello{
     NSLog(@"Hello!");
 }
-
+-(id)copyWithZone:(NSZone *)zone{
+    Person *person = [[[self class] alloc]init];//self that class is used instead of "Person" for copying/allocation
+    
+//    [person setFirstName:[self firstName]];//this is straight objective-c
+    person.firstName = self.firstName;
+    person.lastName = self.lastName;
+    person.age = self.age;
+    
+    return person;
+}
+ 
 @end

@@ -11,7 +11,7 @@
 
 
                         //class         the protocol it conforms to(<>)
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITableViewDataSource, UITableViewDelegate>
 //          modifiers	
 @property (strong, nonatomic) UIWindow *window;
 

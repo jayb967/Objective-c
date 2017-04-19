@@ -24,9 +24,10 @@
     // Override point for customization after application launch.
 //    NSLog(@"%i", gMoveNumber);
     
-    ViewController *myViewController = [[ViewController alloc]init];
     
-    NSString *identifier = [myViewController identifier];
+//    ViewController *myViewController = [[ViewController alloc]init];
+//    
+//    NSString *identifier = [myViewController identifier];
     
     return YES;
     //YES means true
