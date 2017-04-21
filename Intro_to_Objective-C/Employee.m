@@ -21,15 +21,28 @@
     self = [super initWithFirstName:firstName lastName:lastName andAge:age];
     
     if (self) {
-        _yearsEmployed = yearsEmployed;
-        _managerName = managerName;
-        _email = email;
+        if (_yearsEmployed != yearsEmployed) {
+            [yearsEmployed retain];
+            [_yearsEmployed release];
+            _yearsEmployed = yearsEmployed;
+        }
+        if (_managerName != managerName) {
+            [managerName retain];
+            [_managerName release];
+            _managerName = managerName;
+        }
+        if (_email != email) {
+            [email retain];
+            [_email release];
+            _email = email;
+        }
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         
     }
     return self;
     
 }
+
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
@@ -50,7 +63,7 @@
     return self;
 }
 -(void)encodeWithCoder:(NSCoder *)aCoder{
-    [aCoder encodeObject:self.firstName forKey:@"firstName"];
+        [aCoder encodeObject:self.firstName forKey:@"firstName"];
         [aCoder encodeObject:self.lastName forKey:@"lastName"];
         [aCoder encodeObject:self.age forKey:@"age"];
         [aCoder encodeObject:self.yearsEmployed forKey:@"yearsEmployed"];
@@ -70,15 +83,5 @@
     return employee;
     
 }
-
-//NSNumber *_employeeNumber;
-//NSNumber *_yearsEmployed;
-//NSString *_managerName;
-
-
-//dont need this here because I already declared it in the viewController.m///////////////////
-//NSNumber *employeeNumber = [self employeeNumber];
-//NSNumber *yearsEmployed = [self yearsEmployed];
-//NSString *managerName = [self managerName];
 
 @end

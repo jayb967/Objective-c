@@ -16,25 +16,40 @@
 
 -(instancetype)initWithFirstName:(NSString *)firstName lastName: (NSString *)lastName andAge:(NSNumber *)age{
     self = [super init];
+    
     if (self) {
+
         _firstName = firstName;
         _lastName = lastName;
         _age = age;
     }
     return self;
 }
+-(void)setFirstName:(NSString *)firstName{
+    if (_firstName != firstName) {
+        [firstName retain];
+        [_firstName release];
+        _firstName = firstName;
+    }
+}
+-(NSString *)firstName{
+    return _firstName; 
+}
+
+if (_lastName != lastName) {
+    [lastName retain];
+    [_lastName release];
+    _lastName = lastName;
+}
+if (_age != age) {
+    [age retain];
+    [_age release];
+    _age = age;
+}
 
 
 
-////this is a getter
-//-(NSString *)name{
-//    return _name;
-//}
-////setter, will all start with "set"
-//
-//-(void)setName:(NSString *)name{
-//    _name = name;//this is to access the underlying instance variable
-//}
+
 
 -(void)walk{
     
@@ -45,8 +60,6 @@
     NSNumber *age = [self age];
     
     
-//    NSString *adam = @"Adam";//this is how you define a string literal with @
-//    NSLog(@"%@ is walking...Hello %@,", name, adam);//%@ is like interpolation but have to define it like top
     NSLog(@"%@ %@ is still young at %@", firstName, lastName, age);
   
 }

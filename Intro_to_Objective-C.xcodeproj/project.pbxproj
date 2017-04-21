@@ -13,9 +13,9 @@
 		280D7E641EA5250E008CC116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E621EA5250E008CC116 /* Main.storyboard */; };
 		280D7E661EA5250F008CC116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E651EA5250F008CC116 /* Assets.xcassets */; };
 		280D7E691EA5250F008CC116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280D7E671EA5250F008CC116 /* LaunchScreen.storyboard */; };
-		280D7E721EA52F2C008CC116 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E711EA52F2C008CC116 /* Person.m */; };
+		280D7E721EA52F2C008CC116 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E711EA52F2C008CC116 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		280D7E751EA5454E008CC116 /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E741EA5454E008CC116 /* ViewController+Identifier.m */; };
-		280D7E791EA56A26008CC116 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E781EA56A26008CC116 /* Employee.m */; };
+		280D7E791EA56A26008CC116 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E781EA56A26008CC116 /* Employee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		280D7E801EA57ACB008CC116 /* NSString+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E7F1EA57ACB008CC116 /* NSString+Array.m */; };
 		280D7E831EA6877C008CC116 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E821EA6877C008CC116 /* EmployeeDatabase.m */; };
 		280D7E861EA6D903008CC116 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280D7E851EA6D903008CC116 /* TableViewController.m */; };
